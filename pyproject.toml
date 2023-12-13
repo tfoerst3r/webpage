@@ -15,7 +15,7 @@ flask = "^3.0.0"
 ipython = "^8.18.1"
 
 [tool.poetry.scripts]
-mywebpage="src.website.app:main"
+myweb="src.website.app:main"
 
 [build-system]
 requires = ["poetry-core"]
