@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tfoerst3r-career-website"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "website", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.18.1"
+
+[tool.poetry.scripts]
+mywebpage="src.website.app:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
