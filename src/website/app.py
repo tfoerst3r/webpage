@@ -39,9 +39,9 @@ def landing_page():
     return render_template('index.html', jobs=JOBS, company_name="HZDR")
 
 
-def main(app):
+def main():
     app.run(host='0.0.0.0', debug=True)
     return 0
 
 if __name__ == "__main__":
-    main(app)
+    main()
