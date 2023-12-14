@@ -24,22 +24,24 @@ JOBS = [
         'id': 4,
         'title': 'Backend Engineer',
         'location': 'San Fransico, USA',
-        'salary': '$120,000'
+        'salary': '$150,000'
     }
 ]
 
-#-- api route
+#-- api route --#
 @app.route("/api/jobs")
 def list_jobs():
     return jsonify(JOBS)
 
+
 @app.route("/")
-def main():
+def landing_page():
     return render_template('index.html', jobs=JOBS, company_name="HZDR")
 
 
-def main():
+def main(app):
     app.run(host='0.0.0.0', debug=True)
+    return 0
 
 if __name__ == "__main__":
-    main()
+    main(app)

@@ -16,7 +16,7 @@ gunicorn = "^21.2.0"
 ipython = "^8.18.1"
 
 [tool.poetry.scripts]
-myweb="src.website.app:main"
+myweb="src.website.app:app"
 
 [build-system]
 requires = ["poetry-core"]
